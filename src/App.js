@@ -2,13 +2,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MyNavbar from "./components/navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
 import Leadership from "./pages/Leadership";
 import Speakers from "./pages/Speakers";
 import Submission from "./pages/Submission";
 import Registration from "./pages/Registration";
 import Watermark from "./components/Watermark";
+import Home from "./pages/Home"; // Ensure the path is correct
+import About from "./pages/About"; // Ensure the path is correct
 
 function App() {
     return (

@@ -15,41 +15,40 @@ export function MyNavbar() {
             <Navbar.Toggle className="block md:hidden" />
 
             {/* Links container */}
-            <div className="ml-auto flex md:items-center"> {/* Use ml-auto to push links to the right */}
+            <div className="ml-auto flex items-center space-x-6 md:flex md:items-center"> {/* Use space-x-6 for spacing */}
                 <Navbar.Collapse className="hidden md:flex md:items-center">
-                    {/* Add margin to links for spacing */}
                     <Navbar.Link
                         as={Link}
                         to="/"
-                        className={`mr-6 text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/" ? "text-blue-500 font-bold" : "text-black"}`}
+                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/" ? "text-blue-500 font-bold" : "text-black"}`}
                     >
                         Home
                     </Navbar.Link>
                     <Navbar.Link
                         as={Link}
                         to="/about"
-                        className={`mr-6 text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/about" ? "text-blue-500 font-bold" : "text-black"}`}
+                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/about" ? "text-blue-500 font-bold" : "text-black"}`}
                     >
                         About
                     </Navbar.Link>
                     <Navbar.Link
                         as={Link}
                         to="/leadership"
-                        className={`mr-6 text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/leadership" ? "text-blue-500 font-bold" : "text-black"}`}
+                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/leadership" ? "text-blue-500 font-bold" : "text-black"}`}
                     >
                         Leadership
                     </Navbar.Link>
                     <Navbar.Link
                         as={Link}
                         to="/speakers"
-                        className={`mr-6 text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/speakers" ? "text-blue-500 font-bold" : "text-black"}`}
+                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/speakers" ? "text-blue-500 font-bold" : "text-black"}`}
                     >
                         Speakers
                     </Navbar.Link>
                     <Navbar.Link
                         as={Link}
                         to="/submission"
-                        className={`mr-6 text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/submission" ? "text-blue-500 font-bold" : "text-black"}`}
+                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/submission" ? "text-blue-500 font-bold" : "text-black"}`}
                     >
                         Submission
                     </Navbar.Link>
