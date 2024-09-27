@@ -2,7 +2,7 @@ import React from 'react';
 
 const Speakers = () => {
   return (
-    <div className="speakers-container bg-blue-100 min-h-screen p-8">
+    <div className="speakers-container bg-blue-50 min-h-screen p-8">
       <h1 className="text-5xl font-bold text-center mb-8">Speakers</h1>
       <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
         We host a variety of speakers throughout the academic year to enhance the educational experience of our students.

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Submissions = () => {
   return (
-    <div className="submissions-container bg-blue-100 min-h-screen p-8">
+    <div className="submissions-container bg-blue-50 min-h-screen p-8">
       <h1 className="text-5xl font-bold text-center mb-8">Submissions</h1>
       <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
         Submit your manuscripts for consideration in our departmental publications.

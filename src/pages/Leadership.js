@@ -2,7 +2,7 @@ import React from 'react';
 
 const Leadership = () => {
   return (
-    <div className="leadership-container bg-blue-100 min-h-screen p-8">
+    <div className="leadership-container bg-blue-50 min-h-screen p-8">
       <h1 className="text-5xl font-bold text-center mb-8">Leadership Team</h1>
       <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
         The Economics Department at BITS Pilani, Hyderabad is led by a team of dedicated professionals who drive the vision of academic excellence and research.

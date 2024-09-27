@@ -2,7 +2,7 @@ import React from 'react';
 
 const Registrations = () => {
   return (
-    <div className="registrations-container bg-blue-100 min-h-screen p-8">
+    <div className="registrations-container bg-blue-50 min-h-screen p-8">
       <h1 className="text-5xl font-bold text-center mb-8">Registrations</h1>
       <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
         Register for our upcoming events to enrich your learning experience.
