@@ -15,15 +15,17 @@ function App() {
         <Router>
             <div className="min-h-screen bg-blue-50 pt-16"> {/* Add padding-top to avoid overlap with fixed navbar */}
                 <MyNavbar />
-                <Watermark/>
+                <Watermark />
+                <div className="container mx-auto px-4">
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/leadership" element={<Leadership />} />
                     <Route path="/speakers" element={<Speakers />} />
                     <Route path="/submission" element={<Submission />} />
                     <Route path="/registration" element={<Registration />} />
                 </Routes>
+                </div>
             </div>
         </Router>
     );

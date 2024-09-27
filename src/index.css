@@ -22,3 +22,25 @@
 .animate-fadeInOut {
     animation: fadeInOut 4s ease-in-out infinite;
 }
+/* Hide the dots (bullets) from the dropdown menu */
+.navbar-collapse {
+    list-style-type: none; /* Remove bullet points from the navbar */
+}
+
+    .navbar-collapse ul {
+        list-style: none; /* Remove bullet points from the list */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+
+/* Hide the "Open main menu" text */
+.navbar-toggle-label {
+    display: none; /* Hides the "Open main menu" text */
+}
+
+/* Optional: You can also add this to ensure no bullets on any list */
+ul {
+    list-style: none; /* Globally removes bullet points from unordered lists */
+    padding: 0;
+    margin: 0;
+}

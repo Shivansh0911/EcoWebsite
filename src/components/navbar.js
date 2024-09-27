@@ -1,68 +1,141 @@
-import { Link, useLocation } from "react-router-dom";
-import { Navbar } from "flowbite-react";
+import React, { useState } from 'react';
+import Logo from '../components/logo.jpg'; // Adjust the path to your logo image
 
-export function MyNavbar() {
-    const location = useLocation();
+const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    const closeMenuOnOutsideClick = (event) => {
+        if (
+            event.target.closest('#mobile-menu') === null &&
+            event.target.closest('#menu-btn') === null
+        ) {
+            setMenuOpen(false);
+        }
+    };
+
+    React.useEffect(() => {
+        document.addEventListener('click', closeMenuOnOutsideClick);
+        return () => {
+            document.removeEventListener('click', closeMenuOnOutsideClick);
+        };
+    }, []);
 
     return (
-        <Navbar fluid rounded className="bg-blue-200 fixed top-0 w-full z-10 flex items-center">
-            {/* Logo on the left */}
-            <Navbar.Brand href="https://flowbite-react.com" className="flex items-center">
-                <img src='/logo.png' alt='BPHC' className="h-10" />
-            </Navbar.Brand>
+        <nav className="fixed top-0 left-0 w-full z-50 bg-blue-200">
+            <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
+                {/* Logo Section */}
+                <div id="logo" className="flex-shrink-0">
+                    <img className="w-36" src={Logo} alt="Logo" />
+                </div>
 
-            {/* Toggle button for mobile view */}
-            <Navbar.Toggle className="block md:hidden" />
+                {/* Hamburger Menu for Mobile View */}
+                <div className="md:hidden">
+                    <button
+                        id="menu-btn"
+                        className="text-skyblue focus:outline-none cursor-pointer"
+                        onClick={toggleMenu}
+                    >
+                        {menuOpen ? (
+                            // Cross icon when the menu is open
+                            <svg
+                                className="w-8 h-8 absolute top-5 right-5"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                ></path>
+                            </svg>
+                        ) : (
+                            // Hamburger icon when the menu is closed
+                            <svg
+                                className="w-8 h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                ></path>
+                            </svg>
+                        )}
+                    </button>
+                </div>
 
-            {/* Links container */}
-            <div className="ml-auto flex items-center space-x-6 md:flex md:items-center"> {/* Use space-x-6 for spacing */}
-                <Navbar.Collapse className="hidden md:flex md:items-center">
-                    <Navbar.Link
-                        as={Link}
-                        to="/"
-                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/" ? "text-blue-500 font-bold" : "text-black"}`}
-                    >
-                        Home
-                    </Navbar.Link>
-                    <Navbar.Link
-                        as={Link}
-                        to="/about"
-                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/about" ? "text-blue-500 font-bold" : "text-black"}`}
-                    >
-                        About
-                    </Navbar.Link>
-                    <Navbar.Link
-                        as={Link}
-                        to="/leadership"
-                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/leadership" ? "text-blue-500 font-bold" : "text-black"}`}
-                    >
-                        Leadership
-                    </Navbar.Link>
-                    <Navbar.Link
-                        as={Link}
-                        to="/speakers"
-                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/speakers" ? "text-blue-500 font-bold" : "text-black"}`}
-                    >
-                        Speakers
-                    </Navbar.Link>
-                    <Navbar.Link
-                        as={Link}
-                        to="/submission"
-                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/submission" ? "text-blue-500 font-bold" : "text-black"}`}
-                    >
-                        Submission
-                    </Navbar.Link>
-                    <Navbar.Link
-                        as={Link}
-                        to="/registration"
-                        className={`text-lg font-semibold tracking-wider hover:text-blue-500 ${location.pathname === "/registration" ? "text-blue-500 font-bold" : "text-black"}`}
-                    >
-                        Registration
-                    </Navbar.Link>
-                </Navbar.Collapse>
+                {/* Links for larger screens */}
+                <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-skyblue text-lg lg:text-xl xl:text-2xl font-bold justify-end w-full">
+                    <li><a href="home" className="hover:text-skyblue">Home</a></li>
+                    <li><a href="about" className="hover:text-skyblue">About</a></li>
+                    <li><a href="leadership" className="hover:text-skyblue">Leadership</a></li>
+                    <li><a href="speakers" className="hover:text-skyblue">Speakers</a></li>
+                    <li><a href="submission" className="hover:text-skyblue">Submissions</a></li>
+                    <li><a href="registration" className="hover:text-skyblue">Registrations</a></li>
+                </ul>
             </div>
-        </Navbar>
-    );
-}
 
-export default MyNavbar;
+            {/* Mobile Menu */}
+            <div
+                id="mobile-menu"
+                className={`md:hidden fixed inset-0 bg-white text-skyblue text-2xl font-bold z-50 flex flex-col items-center justify-start pt-10 transition-transform duration-500 ease-in-out ${menuOpen ? 'block' : 'hidden'
+                    }`}
+            >
+                {/* Cross icon in mobile menu */}
+                <button
+                    className="absolute top-5 right-5"
+                    onClick={toggleMenu}
+                >
+                    <svg
+                        className="w-8 h-8"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        ></path>
+                    </svg>
+                </button>
+
+                <ul className="w-full mt-10">
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <a href="home" className="block">Home</a>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <a href="about" className="block">About</a>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <a href="leadership" className="block">Leadership</a>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <a href="speakers" className="block">Speakers</a>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <a href="submission" className="block">Submissions</a>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <a href="registration" className="block">Registrations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
