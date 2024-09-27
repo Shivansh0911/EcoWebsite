@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <div className="about-container bg-blue-50 min-h-screen p-8">
+    <div className="about-container bg-white min-h-screen p-8">
       {/* About Us Section */}
       <section className="text-center py-12">
         <h2 className="text-5xl font-bold mb-6">About the Economics Department</h2>

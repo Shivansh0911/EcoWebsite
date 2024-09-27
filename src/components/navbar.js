@@ -25,7 +25,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-blue-200">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-blue-50">
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
                 {/* Logo Section */}
                 <div id="logo" className="flex-shrink-0">
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Links for larger screens */}
-                <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-skyblue text-lg lg:text-xl xl:text-2xl font-bold justify-end w-full">
+                <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-skyblue text-lg lg:text-xl xl:text-2xl  justify-end w-full">
                     <li><a href="home" className="hover:text-skyblue">Home</a></li>
                     <li><a href="about" className="hover:text-skyblue">About</a></li>
                     <li><a href="leadership" className="hover:text-skyblue">Leadership</a></li>
@@ -89,7 +89,7 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div
                 id="mobile-menu"
-                className={`md:hidden fixed inset-0 bg-white text-skyblue text-2xl font-bold z-50 flex flex-col items-center justify-start pt-10 transition-transform duration-500 ease-in-out ${menuOpen ? 'block' : 'hidden'
+                className={`md:hidden fixed inset-0 bg-white text-skyblue text-2xl z-50 flex flex-col items-center justify-start pt-10 transition-transform duration-500 ease-in-out ${menuOpen ? 'block' : 'hidden'
                     }`}
             >
                 {/* Cross icon in mobile menu */}

@@ -9,11 +9,12 @@ import Speakers from "./pages/Speakers";
 import Submission from "./pages/Submission";
 import Registration from "./pages/Registration";
 import Watermark from "./components/Watermark";
+import Footer from "./components/footer";
 
 function App() {
     return (
         <Router>
-            <div className="min-h-screen bg-blue-50 pt-16"> {/* Add padding-top to avoid overlap with fixed navbar */}
+            <div className="min-h-screen bg-white pt-16"> {/* Add padding-top to avoid overlap with fixed navbar */}
                 <MyNavbar />
                 <Watermark />
                 <div className="container mx-auto px-4">
@@ -27,6 +28,7 @@ function App() {
                         <Route path="/registration" element={<Registration />} />
                     </Routes>
                 </div>
+                <Footer/>
             </div>
         </Router>
     );
