@@ -1,14 +1,14 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import MyNavbar from "./components/navbar";
+import Home from "./pages/Home";
+import About from "./pages/About"; 
 import Leadership from "./pages/Leadership";
 import Speakers from "./pages/Speakers";
 import Submission from "./pages/Submission";
 import Registration from "./pages/Registration";
 import Watermark from "./components/Watermark";
-import Home from "./pages/Home"; // Ensure the path is correct
-import About from "./pages/About"; // Ensure the path is correct
 
 function App() {
     return (
@@ -17,14 +17,15 @@ function App() {
                 <MyNavbar />
                 <Watermark />
                 <div className="container mx-auto px-4">
-                <Routes>
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/leadership" element={<Leadership />} />
-                    <Route path="/speakers" element={<Speakers />} />
-                    <Route path="/submission" element={<Submission />} />
-                    <Route path="/registration" element={<Registration />} />
-                </Routes>
+                    <Routes>
+                        <Route path="/" element={<Navigate to="/home" />} />
+                        <Route path="/home" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/leadership" element={<Leadership />} />
+                        <Route path="/speakers" element={<Speakers />} />
+                        <Route path="/submission" element={<Submission />} />
+                        <Route path="/registration" element={<Registration />} />
+                    </Routes>
                 </div>
             </div>
         </Router>
