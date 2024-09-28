@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Logo from '../components/logo.jpg'; // Adjust the path to your logo image
 
 const Navbar = () => {
@@ -23,6 +24,14 @@ const Navbar = () => {
             document.removeEventListener('click', closeMenuOnOutsideClick);
         };
     }, []);
+
+    const linkStyles = ({ isActive }) =>
+        isActive ? "font-bold text-skyblue" : "text-skyblue";
+
+    // Close the menu after clicking a link
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-blue-50">
@@ -76,21 +85,44 @@ const Navbar = () => {
                 </div>
 
                 {/* Links for larger screens */}
-                <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-skyblue text-lg lg:text-xl xl:text-2xl  justify-end w-full">
-                    <li><a href="home" className="hover:text-skyblue">Home</a></li>
-                    <li><a href="about" className="hover:text-skyblue">About</a></li>
-                    <li><a href="leadership" className="hover:text-skyblue">Leadership</a></li>
-                    <li><a href="speakers" className="hover:text-skyblue">Speakers</a></li>
-                    <li><a href="submission" className="hover:text-skyblue">Submissions</a></li>
-                    <li><a href="registration" className="hover:text-skyblue">Registrations</a></li>
+                <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-lg lg:text-xl xl:text-2xl justify-end w-full">
+                    <li>
+                        <NavLink to="home" className={linkStyles}>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="about" className={linkStyles}>
+                            About
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="leadership" className={linkStyles}>
+                            Leadership
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="speakers" className={linkStyles}>
+                            Speakers
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="submission" className={linkStyles}>
+                            Submissions
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="registration" className={linkStyles}>
+                            Registrations
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
 
             {/* Mobile Menu */}
             <div
                 id="mobile-menu"
-                className={`md:hidden fixed inset-0 bg-white text-skyblue text-2xl z-50 flex flex-col items-center justify-start pt-10 transition-transform duration-500 ease-in-out ${menuOpen ? 'block' : 'hidden'
-                    }`}
+                className={`md:hidden fixed inset-0 bg-white text-skyblue text-2xl z-50 flex flex-col items-center justify-start pt-10 transition-transform duration-500 ease-in-out ${menuOpen ? 'block' : 'hidden'}`}
             >
                 {/* Cross icon in mobile menu */}
                 <button
@@ -115,22 +147,34 @@ const Navbar = () => {
 
                 <ul className="w-full mt-10">
                     <li className="border-b border-blue-500 w-full text-center py-4">
-                        <a href="home" className="block">Home</a>
+                        <NavLink to="home" className={linkStyles} onClick={handleLinkClick}>
+                            Home
+                        </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
-                        <a href="about" className="block">About</a>
+                        <NavLink to="about" className={linkStyles} onClick={handleLinkClick}>
+                            About
+                        </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
-                        <a href="leadership" className="block">Leadership</a>
+                        <NavLink to="leadership" className={linkStyles} onClick={handleLinkClick}>
+                            Leadership
+                        </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
-                        <a href="speakers" className="block">Speakers</a>
+                        <NavLink to="speakers" className={linkStyles} onClick={handleLinkClick}>
+                            Speakers
+                        </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
-                        <a href="submission" className="block">Submissions</a>
+                        <NavLink to="submission" className={linkStyles} onClick={handleLinkClick}>
+                            Submissions
+                        </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
-                        <a href="registration" className="block">Registrations</a>
+                        <NavLink to="registration" className={linkStyles} onClick={handleLinkClick}>
+                            Registrations
+                        </NavLink>
                     </li>
                 </ul>
             </div>
@@ -139,3 +183,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
