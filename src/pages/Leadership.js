@@ -1,41 +1,49 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const Leadership = () => {
-  return (
-    <div className="leadership-container bg-white min-h-screen p-8">
-      <h1 className="text-5xl font-bold text-center mb-8">Leadership Team</h1>
-      <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
-        The Economics Department at BITS Pilani, Hyderabad is led by a team of dedicated professionals who drive the vision of academic excellence and research.
-      </p>
+    // Initialize AOS for animations
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Set animation duration to 1000ms
+    }, []);
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">Department Head</h2>
-          <p className="text-gray-700">Oversees academic programs, faculty development, and student success.</p>
-        </div>
+    return (
+        <div className="leadership-container bg-white min-h-screen p-8">
+            <h1 className="text-5xl font-bold text-center mb-8" data-aos="fade-up">Leadership Team</h1>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8" data-aos="fade-up" data-aos-delay="200">
+                The Economics Department at BITS Pilani, Hyderabad is led by a team of dedicated professionals who drive the vision of academic excellence and research.
+            </p>
 
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">Research Coordinator</h2>
-          <p className="text-gray-700">Promotes research activities and collaboration with global institutions.</p>
-        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div className="bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="400">
+                    <h2 className="text-2xl font-bold mb-4">Department Head</h2>
+                    <p className="text-gray-700">Oversees academic programs, faculty development, and student success.</p>
+                </div>
 
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">Academic Coordinator</h2>
-          <p className="text-gray-700">Responsible for curriculum design, assessment methods, and student engagement.</p>
-        </div>
+                <div className="bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="600">
+                    <h2 className="text-2xl font-bold mb-4">Research Coordinator</h2>
+                    <p className="text-gray-700">Promotes research activities and collaboration with global institutions.</p>
+                </div>
 
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">Finance Officer</h2>
-          <p className="text-gray-700">Manages departmental finances, budgeting, and funding for research projects.</p>
-        </div>
+                <div className="bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="800">
+                    <h2 className="text-2xl font-bold mb-4">Academic Coordinator</h2>
+                    <p className="text-gray-700">Responsible for curriculum design, assessment methods, and student engagement.</p>
+                </div>
 
-        <div className="bg-white shadow-lg rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">Student Affairs Coordinator</h2>
-          <p className="text-gray-700">Ensures student well-being, organizes events, and facilitates academic counseling.</p>
+                <div className="bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="1000">
+                    <h2 className="text-2xl font-bold mb-4">Finance Officer</h2>
+                    <p className="text-gray-700">Manages departmental finances, budgeting, and funding for research projects.</p>
+                </div>
+
+                <div className="bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="1200">
+                    <h2 className="text-2xl font-bold mb-4">Student Affairs Coordinator</h2>
+                    <p className="text-gray-700">Ensures student well-being, organizes events, and facilitates academic counseling.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Leadership;
+

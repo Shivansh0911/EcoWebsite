@@ -1,9 +1,11 @@
 // src/App.js
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 import MyNavbar from "./components/navbar";
 import Home from "./pages/Home";
-import About from "./pages/About"; 
+import About from "./pages/About";
 import Leadership from "./pages/Leadership";
 import Speakers from "./pages/Speakers";
 import Submission from "./pages/Submission";
@@ -12,6 +14,10 @@ import Watermark from "./components/Watermark";
 import Footer from "./components/footer";
 
 function App() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Initialize AOS with a 1-second duration
+    }, []);
+
     return (
         <Router>
             <div className="min-h-screen bg-white pt-16"> {/* Add padding-top to avoid overlap with fixed navbar */}
@@ -28,7 +34,7 @@ function App() {
                         <Route path="/registration" element={<Registration />} />
                     </Routes>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         </Router>
     );

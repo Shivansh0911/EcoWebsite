@@ -26,7 +26,9 @@ const Navbar = () => {
     }, []);
 
     const linkStyles = ({ isActive }) =>
-        isActive ? "font-bold text-skyblue" : "text-skyblue";
+        isActive
+            ? "text-skyblue underline decoration-4 decoration-blue-500"
+            : "text-skyblue";
 
     // Close the menu after clicking a link
     const handleLinkClick = () => {
@@ -87,32 +89,32 @@ const Navbar = () => {
                 {/* Links for larger screens */}
                 <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-lg lg:text-xl xl:text-2xl justify-end w-full">
                     <li>
-                        <NavLink to="home" className={linkStyles}>
+                        <NavLink to="home" className={linkStyles} onClick={handleLinkClick}>
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="about" className={linkStyles}>
+                        <NavLink to="about" className={linkStyles} onClick={handleLinkClick}>
                             About
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="leadership" className={linkStyles}>
+                        <NavLink to="leadership" className={linkStyles} onClick={handleLinkClick}>
                             Leadership
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="speakers" className={linkStyles}>
+                        <NavLink to="speakers" className={linkStyles} onClick={handleLinkClick}>
                             Speakers
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="submission" className={linkStyles}>
+                        <NavLink to="submission" className={linkStyles} onClick={handleLinkClick}>
                             Submissions
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="registration" className={linkStyles}>
+                        <NavLink to="registration" className={linkStyles} onClick={handleLinkClick}>
                             Registrations
                         </NavLink>
                     </li>
@@ -183,4 +185,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
