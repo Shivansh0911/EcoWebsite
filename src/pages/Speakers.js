@@ -21,18 +21,24 @@ const Speakers = () => {
                     <img src={SpeakerImage1} alt="Prof. Prachi Mishra" className="rounded-lg mb-4" />
                     <h2 className="text-2xl font-bold mb-4">Prof. Prachi Mishra</h2>
                     <p className="text-gray-700">
-                        Before joining Ashoka University, Prof. Prachi Mishra served as Chief of the Systemic Issues Division at the International Monetary Fund (IMF). 
+                        Before joining Ashoka University, Prof. Prachi Mishra served as Chief of the Systemic Issues Division at the International Monetary Fund (IMF).
                         With a PhD from Columbia University, she specializes in macroeconomics and international finance.
                     </p>
+                    <a href="https://www.ashoka.edu.in/profile/prachi-mishra/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                        click here for more info.
+                    </a>
                 </div>
 
                 <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105" data-aos="fade-left" data-aos-delay="600">
                     <img src={SpeakerImage2} alt="Prof. Srinivasan Rangan" className="rounded-lg mb-4" />
                     <h2 className="text-2xl font-bold mb-4">Prof. Srinivasan Rangan</h2>
                     <p className="text-gray-700">
-                        Prof. Srinivasan Rangan is a faculty member at IIM Bangalore, specializing in financial analysis and valuation. 
+                        Prof. Srinivasan Rangan is a faculty member at IIM Bangalore, specializing in financial analysis and valuation.
                         He has a PhD in Accounting from the Wharton School and extensive experience in the finance sector.
                     </p>
+                    <a href=" https://www.iimb.ac.in/user/129/srinivasan-rangan" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                        click here for more info.
+                    </a>
                 </div>
             </div>
         </div>

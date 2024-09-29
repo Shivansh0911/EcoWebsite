@@ -2,7 +2,7 @@ import React from 'react';
 
 const Preconference = () => {
     return (
-        <div className="preconference-container bg-white min-h-screen p-8">
+        <div className="preconference-container bg-white min-h-screen p-8" data-aos="fade-up">
             <h1 className="text-5xl font-bold text-center mb-8">Pre-Conference Workshops</h1>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
                 Join us for a series of pre-conference workshops designed to deepen your understanding of key economic concepts and methodologies. 
