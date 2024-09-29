@@ -7,11 +7,13 @@ import MyNavbar from "./components/navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Leadership from "./pages/Leadership";
+import PreConference from "./pages/preconference";
 import Speakers from "./pages/Speakers";
 import Submission from "./pages/Submission";
 import Registration from "./pages/Registration";
 import Watermark from "./components/Watermark";
 import Footer from "./components/footer";
+import Preconference from "./pages/preconference";
 
 function App() {
     useEffect(() => {
@@ -29,6 +31,7 @@ function App() {
                         <Route path="/home" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/leadership" element={<Leadership />} />
+                        <Route path="/preconference" element={<Preconference />} />
                         <Route path="/speakers" element={<Speakers />} />
                         <Route path="/submission" element={<Submission />} />
                         <Route path="/registration" element={<Registration />} />
