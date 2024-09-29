@@ -27,7 +27,7 @@ const Navbar = () => {
 
     const linkStyles = ({ isActive }) =>
         isActive
-            ? "text-skyblue underline decoration-4 decoration-blue-500"
+            ? "text-skyblue font-bold"
             : "text-skyblue";
 
     // Close the menu after clicking a link
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Links for larger screens */}
-                <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-lg lg:text-xl xl:text-2xl justify-end w-full">
+                <ul className="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 text-sm lg:text-base xl:text-lg justify-end w-full">
                     <li>
                         <NavLink to="home" className={linkStyles} onClick={handleLinkClick}>
                             Home
@@ -114,11 +114,17 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
+                        <NavLink to="preconference" className={linkStyles} onClick={handleLinkClick}>
+                            Pre-Conference Workshop
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink to="registration" className={linkStyles} onClick={handleLinkClick}>
                             Registrations
                         </NavLink>
                     </li>
                 </ul>
+
             </div>
 
             {/* Mobile Menu */}
@@ -171,6 +177,11 @@ const Navbar = () => {
                     <li className="border-b border-blue-500 w-full text-center py-4">
                         <NavLink to="submission" className={linkStyles} onClick={handleLinkClick}>
                             Submissions
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="preconference" className={linkStyles} onClick={handleLinkClick}>
+                            Pre-Conference Workshop
                         </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
