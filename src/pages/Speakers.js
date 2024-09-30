@@ -10,7 +10,7 @@ const Speakers = () => {
     }, []);
 
     return (
-        <div className="speakers-container bg-white min-h-screen p-8 mt-16"> {/* Added mt-16 to avoid navbar overlap */}
+        <div className="speakers-container bg-white min-h-screen p-8 "> 
             <h1 className="text-5xl font-bold text-center mb-8" data-aos="fade-up">Conference Speakers</h1>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8" data-aos="fade-up" data-aos-delay="200">
                 Our annual conference features eminent speakers who will share their insights and experiences in the field of economics.

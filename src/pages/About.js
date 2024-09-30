@@ -44,8 +44,7 @@ const About = () => {
     }, [slides.length]);
 
     return (
-        <div className="bg-white min-h-screen">
-            <div className="container mx-auto px-4 pt-20"> {/* Ensure this wrapper aligns content with the navbar */}
+        <div className="about-container bg-white min-h-screen p-8">
                 {/* About Us Section */}
                 <section className="text-center py-12" data-aos="fade-right">
                     <h2 className="text-4xl font-bold mb-6">About the Economics Department</h2>
@@ -104,7 +103,6 @@ const About = () => {
                     </div>
                 </section>
             </div>
-        </div>
     );
 };
 
