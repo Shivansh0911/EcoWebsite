@@ -3,31 +3,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import BitsScene1 from '../components/bits-scenery-1.jpg'; // Some campus scenery
 import DepartmentPhoto from '../components/department-photo.jpg'; // Economics department photo
-import ValmikiBhawan from '../components/valmiki-bhawan.jpg'; // Valmiki Bhawan
-import CBlock from '../components/c-block.jpg'; // C Block
-import AcadWideAngle from '../components/acad-wide-angle.jpg'; // Acad Wide Angle
-import RockGarden from '../components/rock-garden.jpg'; // Rock Garden
-import NewAcads from '../components/new-acads.jpg'; // New Acads
-import PathToAcads from '../components/path-to-acads.jpg'; // Path to Acads
-import Bus from '../components/bus.jpg'; // Bus
-import Archway from '../components/archway.jpg '; 
 
 const About = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-
-    // Add all the images into the slides array
-    const slides = [
-        BitsScene1,
-        DepartmentPhoto,
-        ValmikiBhawan,
-        CBlock,
-        AcadWideAngle,
-        RockGarden,
-        NewAcads,
-        PathToAcads,
-        Bus,
-        Archway
-    ];
+    const slides = [BitsScene1, DepartmentPhoto]; // Including department photo in carousel
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -100,3 +79,4 @@ const About = () => {
 };
 
 export default About;
+
