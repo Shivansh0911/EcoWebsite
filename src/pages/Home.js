@@ -135,7 +135,16 @@ const Home = () => {
                         </a>
                     </li>
                 </ul>
-
+                <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">ORGANIZING COMMITTEE</h2>
+                <ul className="list-disc list-inside text-left mx-auto max-w-lg text-gray-700" data-aos="fade-up">
+                    <li>Prof. Rishi Kumar (Head of the Department)</li>
+                    <li>Prof. Archana Srivastava (Convener)</li>
+                    <li>Prof. Sudatta Banerjee</li>
+                    <li>Prof. Shreya Biswas</li>
+                    <li>Prof. Dushyant Kumar</li>
+                    <li>Prof. Sravani Bharandev</li>
+                    <li>Prof. ACV Subrahmanyam</li>
+                </ul>
                 {/* Conference Photos */}
                 <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Previous Conference Highlights</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-up">
