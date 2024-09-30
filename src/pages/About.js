@@ -1,12 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+
+// Image imports for the carousel
 import BitsScene1 from '../components/bits-scenery-1.jpg'; // Some campus scenery
 import DepartmentPhoto from '../components/department-photo.jpg'; // Economics department photo
+import ValmikiBhawan from '../components/valmiki-bhawan.jpg'; // Valmiki Bhawan
+import CBlock from '../components/c-block.jpg'; // C Block
+import AcadWideAngle from '../components/acad-wide-angle.jpg'; // Acad Wide Angle
+import RockGarden from '../components/rock-garden.jpg'; // Rock Garden
+import NewAcads from '../components/new-acads.jpg'; // New Acads
+import PathToAcads from '../components/path-to-acads.jpg'; // Path to Acads
+import Bus from '../components/bus.jpg'; // Bus
+import Archway from '../components/archway.jpg'; // Archway
 
 const About = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [BitsScene1, DepartmentPhoto]; // Including department photo in carousel
+
+    // Add all the images into the slides array
+    const slides = [
+        BitsScene1,
+        DepartmentPhoto,
+        ValmikiBhawan,
+        CBlock,
+        AcadWideAngle,
+        RockGarden,
+        NewAcads,
+        PathToAcads,
+        Bus,
+        Archway
+    ];
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -26,9 +49,11 @@ const About = () => {
             <section className="text-center py-12" data-aos="fade-right">
                 <h2 className="text-4xl font-bold mb-6">About the Economics Department</h2>
                 <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-10">
-                    The Economics and Finance Department at BITS Pilani - Hyderabad Campus offers MSc (Hons) Economics as a first degree, three minor programs (Finance, Management and Computational Economics) and Ph.D. program. The diversity of specializations of the departmental faculty has promoted multi-faceted research at the Department and has brought a certain depth to the courses as well. Along with research, the Department recognizes the growing demand for trained manpower in education, industry, government and other sectors as well as nurturing future researchers and specialists in Economics, Finance and Management. The teaching methodology pursues to provide students with a strong conceptual foundation and to create a continuous interest and involvement with the real life applications of Economics, Finance and Management. For more details about our Department, we request you to go through the department website.  
+                    The Economics and Finance Department at BITS Pilani - Hyderabad Campus offers MSc (Hons) Economics as a first degree, three minor programs (Finance, Management, and Computational Economics), and a Ph.D. program. The diversity of specializations of the departmental faculty has promoted multi-faceted research at the Department and has brought a certain depth to the courses as well. The teaching methodology provides students with a strong conceptual foundation and real-life applications of Economics, Finance, and Management.
                 </p>
             </section>
+
+            {/* Economic Association Section */}
             <section className="text-center py-12" data-aos="fade-left" data-aos-delay="200">
                 <h2 className="text-4xl font-bold mb-6">Economic Association</h2>
                 <p className="text-lg text-gray-700 max-w-4xl mx-auto">
@@ -45,7 +70,7 @@ const About = () => {
             </section>
 
             {/* Campus & Department Photos */}
-            <section className="carousel-section py-12" data-aos="fade-left" data-aos-delay="200">
+            <section className="carousel-section py-12" data-aos="zoom-in" data-aos-delay="400">
                 <h2 className="text-4xl font-bold text-center mb-8">Explore Our Campus</h2>
                 <div className="relative w-full max-w-4xl mx-auto">
                     <div className="relative overflow-hidden">
@@ -79,4 +104,3 @@ const About = () => {
 };
 
 export default About;
-
