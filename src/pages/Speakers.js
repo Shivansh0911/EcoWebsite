@@ -29,7 +29,7 @@ const Speakers = () => {
                     </a>
                 </div>
 
-                <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105" data-aos="fade-left" data-aos-delay="600">
+                <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105" data-aos="fade-left" data-aos-delay="400">
                     <img src={SpeakerImage2} alt="Prof. Srinivasan Rangan" className="rounded-lg mb-4 w-full object-cover" /> {/* Adjusted for mobile */}
                     <h2 className="text-2xl font-bold mb-4">Prof. Srinivasan Rangan</h2>
                     <p className="text-gray-700">
