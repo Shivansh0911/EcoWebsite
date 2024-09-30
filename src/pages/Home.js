@@ -51,79 +51,81 @@ const Home = () => {
                     February 4-6, 2025 | BITS Pilani Hyderabad Campus <br />
                     The conference invites papers on both theoretical and empirical aspects of economics and finance.
                 </p>
-                <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">OBJECTIVES OF THE CONFERENCE</h2>
-                <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto mb-6">
-                    The conference aims to bring together academicians, young researchers, policy analysts, and industry experts
-                    to share their experiences and research findings on the problems, issues, prospects, and challenges within
-                    the diverse field of Economics and Finance, particularly focusing on the developments that have emerged over
-                    the last two decades. Furthermore, the workshop seeks to equip and update participants on recent trends in
-                    economic analysis, helping them stay abreast of the latest techniques, methods, and tools in the field.
-                </p>
+
                 <h2 className="text-lg font-semibold" data-aos="fade-up">Important Dates:</h2>
                 <ul className="list-disc list-inside text-left mx-auto max-w-lg text-gray-700" data-aos="fade-up">
                     <li>Last date for paper submission: December 15, 2024</li>
                     <li>Acceptance notification: December 31, 2024</li>
                     <li>Last date for registration: January 20, 2025</li>
                 </ul>
-                <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">ORGANIZING COMMITTEE</h2>
-                <ul className="list-disc list-inside text-left mx-auto max-w-lg text-gray-700" data-aos="fade-up">
-                    <li>Prof. Rishi Kumar (Head of the Department)</li>
-                    <li>Prof. Archana Srivastava (Convener)</li>
-                    <li>Prof. Sudatta Banerjee</li>
-                    <li>Prof. Shreya Biswas</li>
-                    <li>Prof. Dushyant Kumar</li>
-                    <li>Prof. Sravani Bharandev</li>
-                    <li>Prof. ACV Subrahmanyam</li>
+
+                <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Previous Year Conferences</h2>
+                <ul className="list-disc list-inside text-left mx-auto max-w-lg text-blue-600" data-aos="fade-up">
+                    <li>
+                        <a 
+                            href="https://web.bits-pilani.ac.in/uploads/1st%20Annual%20Conference%20Poster.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hover:underline"
+                        >
+                            1st Annual Conference in Economics and Finance
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://web.bits-pilani.ac.in/uploads/2nd%20Annual%20Conference-Poster.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hover:underline"
+                        >
+                            2nd Annual Conference in Economics and Finance
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://web.bits-pilani.ac.in/uploads/3rd%20annual%20conference%20poster.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hover:underline"
+                        >
+                            3rd Annual Conference in Economics and Finance
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://web.bits-pilani.ac.in/uploads/updated%20conf23%20poster.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hover:underline"
+                        >
+                            4th Annual Conference in Economics and Finance
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://acef2024.vercel.app/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hover:underline"
+                        >
+                            5th Annual Conference in Economics and Finance
+                        </a>
+                    </li>
                 </ul>
+
                 {/* Conference Photos */}
                 <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Conference Highlights</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-up">
-                    {/* Each image will open the lightbox on click */}
-                    <img
-                        src={ConferencePhoto1}
-                        alt="Conference 1"
-                        className="rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-                        onClick={() => setSelectedImage(ConferencePhoto1)}
-                    />
-                    <img
-                        src={ConferencePhoto2}
-                        alt="Conference 2"
-                        className="rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-                        onClick={() => setSelectedImage(ConferencePhoto2)}
-                    />
-                    <img
-                        src={ConferencePhoto3}
-                        alt="Conference 3"
-                        className="rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-                        onClick={() => setSelectedImage(ConferencePhoto3)}
-                    />
-                    <img
-                        src={ConferencePhoto4}
-                        alt="Conference 4"
-                        className="rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-                        onClick={() => setSelectedImage(ConferencePhoto4)}
-                    />
-                    <img
-                        src={ConferencePhoto5}
-                        alt="Conference 5"
-                        className="rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-                        onClick={() => setSelectedImage(ConferencePhoto5)}
-                    />
-                    <img
-                        src={ConferencePhoto6}
-                        alt="Conference 6"
-                        className="rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-                        onClick={() => setSelectedImage(ConferencePhoto6)}
-                    />
+                    {[ConferencePhoto1, ConferencePhoto2, ConferencePhoto3, ConferencePhoto4, ConferencePhoto5, ConferencePhoto6].map((photo, index) => (
+                        <img
+                            key={index}
+                            src={photo}
+                            alt={`Conference ${index + 1}`}
+                            className="rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
+                            onClick={() => setSelectedImage(photo)}
+                        />
+                    ))}
                 </div>
-                <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">PREVIOUS YEAR CONFERENCES</h2>
-                <ul className="list-disc list-inside text-left mx-auto max-w-lg text-blue-600" data-aos="fade-up">
-                    <li><a href="/conferences/1st" className="hover:underline">1st Annual Conference in Economics and Finance</a></li>
-                    <li><a href="/conferences/2nd" className="hover:underline">2nd Annual Conference in Economics and Finance</a></li>
-                    <li><a href="/conferences/3rd" className="hover:underline">3rd Annual Conference in Economics and Finance</a></li>
-                    <li><a href="/conferences/4th" className="hover:underline">4th Annual Conference in Economics and Finance</a></li>
-                    <li><a href="/conferences/5th" className="hover:underline">5th Annual Conference in Economics and Finance</a></li>
-                </ul>
             </section>
 
             {/* Lightbox Modal */}
