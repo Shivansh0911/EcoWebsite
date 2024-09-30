@@ -10,7 +10,7 @@ import RockGarden from '../components/rock-garden.jpg'; // Rock Garden
 import NewAcads from '../components/new-acads.jpg'; // New Acads
 import PathToAcads from '../components/path-to-acads.jpg'; // Path to Acads
 import Bus from '../components/bus.jpg'; // Bus
-import Archway from '../components/archway.jpg'; // Archway
+import Archway from '../components/archway.jpg '; 
 
 const About = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
