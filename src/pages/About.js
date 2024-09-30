@@ -26,9 +26,13 @@ const About = () => {
             <section className="text-center py-12" data-aos="fade-right">
                 <h2 className="text-4xl font-bold mb-6">About the Economics Department</h2>
                 <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-10">
-                    The Economics and Finance Department at BITS Pilani - Hyderabad Campus offers MSc (Hons) Economics as a first degree, three minor programs (Finance, Management and Computational Economics) and Ph.D. program. The diversity of specializations of the departmental faculty has promoted multi-faceted research at the Department and has brought a certain depth to the courses as well. Along with research, the Department recognizes the growing demand for trained manpower in education, industry, government and other sectors as well as nurturing future researchers and specialists in Economics, Finance and Management. The teaching methodology pursues to provide students with a strong conceptual foundation and to create a continuous interest and involvement with the real life applications of Economics, Finance and Management. For more details about our Department, we request you to go through the department website.  
+                    The Economics and Finance Department at BITS Pilani - Hyderabad Campus offers MSc (Hons) Economics as a first degree, three minor programs (Finance, Management, and Computational Economics), and a Ph.D. program. The diversity of specializations of the departmental faculty has promoted multi-faceted research at the Department and has brought a certain depth to the courses as well. Along with research, the Department recognizes the growing demand for trained manpower in education, industry, government, and other sectors, as well as nurturing future researchers and specialists in Economics, Finance, and Management. The teaching methodology pursues to provide students with a strong conceptual foundation and to create a continuous interest and involvement with the real-life applications of Economics, Finance, and Management. For more details about our Department, we request you to go through the
+                    <a href="https://www.bits-pilani.ac.in/hyderabad/economics-and-finance/" className="text-blue-600 underline ml-1">
+                        department website
+                    </a>.
                 </p>
             </section>
+
             <section className="text-center py-12" data-aos="fade-left" data-aos-delay="200">
                 <h2 className="text-4xl font-bold mb-6">Economic Association</h2>
                 <p className="text-lg text-gray-700 max-w-4xl mx-auto">
@@ -45,7 +49,7 @@ const About = () => {
             </section>
 
             {/* Campus & Department Photos */}
-            <section className="carousel-section py-12" data-aos="zoom-in" data-aos-delay="400">
+            <section className="carousel-section py-12" data-aos="fade-left" data-aos-delay="200">
                 <h2 className="text-4xl font-bold text-center mb-8">Explore Our Campus</h2>
                 <div className="relative w-full max-w-4xl mx-auto">
                     <div className="relative overflow-hidden">

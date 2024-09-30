@@ -3,7 +3,8 @@ import React from 'react';
 const Preconference = () => {
     return (
         <div className="preconference-container bg-white min-h-screen p-8" data-aos="fade-up">
-            <h1 className="text-5xl font-bold text-center mb-8">Pre-Conference Workshops</h1>
+            <h1 className="text-5xl font-bold text-center mb-8">Pre-Conference Workshop</h1>
+            <h2 className="text-2xl font-semibold text-center mb-8">(February 4 2025)</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
                 Join us for a series of pre-conference workshops designed to deepen your understanding of key economic concepts and methodologies. 
                 The workshops will cover advanced topics in Economics and Finance, providing valuable insights and practical skills.
@@ -29,11 +30,6 @@ const Preconference = () => {
                 <p className="text-gray-700 mb-4">
                     To register for the workshops, please visit the registration page on our website and fill out the necessary details. Seats are limited, so early registration is encouraged.
                 </p>
-                <h2 className="text-lg font-bold mt-4">Registration Fees:</h2>
-                <ul className="list-disc list-inside">
-                    <li>Research Scholar/Student: ₹1500 + 18% GST</li>
-                    <li>Faculty/Industry Professional/Others: ₹1500 + 18% GST</li>
-                </ul>
             </div>
         </div>
     );
