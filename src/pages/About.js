@@ -3,10 +3,16 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import BitsScene1 from '../components/bits-scenery-1.jpg'; // Some campus scenery
 import DepartmentPhoto from '../components/department-photo.jpg'; // Economics department photo
+import Scenery from '../components/scenery.jpg';
+import Newacad from '../components/newacad.jpg';
+import Group from '../components/group.jpg';
+import Hostel from '../components/hostel.jpg';
 
 const About = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slides = [BitsScene1, DepartmentPhoto]; // Including department photo in carousel
+
+    // Added all images to the slides array for the carousel
+    const slides = [BitsScene1, DepartmentPhoto, Scenery, Newacad, Group, Hostel];
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -82,3 +88,4 @@ const About = () => {
 };
 
 export default About;
+
