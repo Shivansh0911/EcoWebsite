@@ -110,7 +110,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink to="submission" className={linkStyles} onClick={handleLinkClick}>
-                            Submissions
+                            Submission
                         </NavLink>
                     </li>
                     <li>
@@ -120,7 +120,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink to="registration" className={linkStyles} onClick={handleLinkClick}>
-                            Registrations
+                            Registration
                         </NavLink>
                     </li>
                 </ul>
@@ -176,7 +176,7 @@ const Navbar = () => {
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
                         <NavLink to="submission" className={linkStyles} onClick={handleLinkClick}>
-                            Submissions
+                            Submission
                         </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
@@ -186,7 +186,7 @@ const Navbar = () => {
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
                         <NavLink to="registration" className={linkStyles} onClick={handleLinkClick}>
-                            Registrations
+                            Registration
                         </NavLink>
                     </li>
                 </ul>

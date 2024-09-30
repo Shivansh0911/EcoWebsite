@@ -8,7 +8,11 @@ import ConferencePhoto3 from '../components/conference-photo-3.jpg';
 import ConferencePhoto4 from '../components/conference-photo-4.jpg';
 import ConferencePhoto5 from '../components/conference-photo-5.jpg';
 import ConferencePhoto6 from '../components/conference-photo-6.jpg'; // Conference images
-
+import ConferencePhoto7 from '../components/conference-photo-7.jpg';
+import ConferencePhoto8 from '../components/conference-photo-8.jpg';
+import ConferencePhoto9 from '../components/conference-photo-9.jpg';
+import ConferencePhoto10 from '../components/conference-photo-10.jpg';
+import ConferencePhoto11 from '../components/conference-photo-11.jpg';
 const Home = () => {
     const [selectedImage, setSelectedImage] = useState(null); // For lightbox
     const conferenceSectionRef = useRef(null); // Create a ref for the conference section
@@ -39,7 +43,7 @@ const Home = () => {
                         Welcome to the 6th Annual Conference on Economics and Finance (ACEF 2025)
                     </h1>
                     <p className="mt-4 text-lg md:text-xl drop-shadow-md" data-aos="fade-up" data-aos-delay="200">
-                        Econamics Department at BITS Pilani, Hyderabad Campus
+                        Department of Economics and Finance, BITS Pilani, Hyderabad Campus.
                     </p>
                     <button
                         className="mt-6 bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition transform hover:scale-105"
@@ -72,16 +76,41 @@ const Home = () => {
                     the last two decades. Furthermore, the workshop seeks to equip and update participants on recent trends in
                     economic analysis, helping them stay abreast of the latest techniques, methods, and tools in the field.
                 </p>
-
-                <h2 className="text-lg font-semibold" data-aos="fade-up">Important Dates:</h2>
-                <ul className="list-disc list-inside text-left mx-auto max-w-lg text-gray-700" data-aos="fade-up">
-                    <li>Pre-Conference Workshop:February 4, 2025</li>
-                    <li>Conference Dates:February 5-6, 2025</li>
-                    <li>Last date for paper submission: December 15, 2024</li>
-                    <li>Acceptance notification: December 31, 2024</li>
-                    <li>Last date for registration: January 20, 2025</li>
+                <h2 className="text-lg font-bold" data-aos="fade-up">IMPORTANT DATES:</h2>
+                <ul className="mx-auto max-w-lg text-left text-gray-700" data-aos="fade-up">
+                    <li className="grid grid-cols-[250px_auto] py-1">
+                        <span>Pre-Conference Workshop:</span>
+                        <span className="tabular-nums">February 4, 2025</span>
+                    </li>
+                    <li className="grid grid-cols-[250px_auto] py-1">
+                        <span>Conference Dates:</span>
+                        <span className="tabular-nums">February 5-6, 2025</span>
+                    </li>
+                    <li className="grid grid-cols-[250px_auto] py-1">
+                        <span>Last date for paper submission:</span>
+                        <span className="tabular-nums">December 15, 2024</span>
+                    </li>
+                    <li className="grid grid-cols-[250px_auto] py-1">
+                        <span>Acceptance notification:</span>
+                        <span className="tabular-nums">December 31, 2024</span>
+                    </li>
+                    <li className="grid grid-cols-[250px_auto] py-1">
+                        <span>Last date for registration:</span>
+                        <span className="tabular-nums">January 20, 2025</span>
+                    </li>
                 </ul>
 
+
+                <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">ORGANIZING COMMITTEE</h2>
+                <ul className="list-disc list-inside text-left mx-auto max-w-lg text-gray-700" data-aos="fade-up">
+                    <li>Prof. Rishi Kumar (Head of the Department)</li>
+                    <li>Prof. Archana Srivastava (Convener)</li>
+                    <li>Prof. Sudatta Banerjee</li>
+                    <li>Prof. Dushyant Kumar</li>
+                    <li>Prof. Shreya Biswas</li>
+                    <li>Prof. Sravani Bharandev</li>
+                    <li>Prof. ACV Subrahmanyam</li>
+                </ul>
                 <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Previous Year Conferences</h2>
                 <ul className="list-disc list-inside text-left mx-auto max-w-lg text-blue-600" data-aos="fade-up">
                     <li>
@@ -135,20 +164,10 @@ const Home = () => {
                         </a>
                     </li>
                 </ul>
-                <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">ORGANIZING COMMITTEE</h2>
-                <ul className="list-disc list-inside text-left mx-auto max-w-lg text-gray-700" data-aos="fade-up">
-                    <li>Prof. Rishi Kumar (Head of the Department)</li>
-                    <li>Prof. Archana Srivastava (Convener)</li>
-                    <li>Prof. Sudatta Banerjee</li>
-                    <li>Prof. Shreya Biswas</li>
-                    <li>Prof. Dushyant Kumar</li>
-                    <li>Prof. Sravani Bharandev</li>
-                    <li>Prof. ACV Subrahmanyam</li>
-                </ul>
                 {/* Conference Photos */}
                 <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Previous Conference Highlights</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-up">
-                    {[ConferencePhoto1, ConferencePhoto2, ConferencePhoto3, ConferencePhoto4, ConferencePhoto5, ConferencePhoto6].map((photo, index) => (
+                    {[ConferencePhoto1, ConferencePhoto2, ConferencePhoto3, ConferencePhoto4, ConferencePhoto5, ConferencePhoto6, ConferencePhoto7, ConferencePhoto8,ConferencePhoto9,ConferencePhoto10,ConferencePhoto11].map((photo, index) => (
                         <img
                             key={index}
                             src={photo}
