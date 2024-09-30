@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import HeroImage from '../components/hero-bits.jpg'; // Hero image
@@ -11,6 +12,7 @@ import ConferencePhoto6 from '../components/conference-photo-6.jpg'; // Conferen
 
 const Home = () => {
     const [selectedImage, setSelectedImage] = useState(null); // For lightbox
+    const navigate = useNavigate(); // Initialize useNavigate for redirection
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -38,6 +40,7 @@ const Home = () => {
                     <button
                         className="mt-6 bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition transform hover:scale-105"
                         data-aos="fade-up" data-aos-delay="400"
+                        onClick={() => navigate('/about')} // Redirect to the About page
                     >
                         Explore More
                     </button>
