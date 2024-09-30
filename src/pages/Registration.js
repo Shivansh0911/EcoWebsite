@@ -9,12 +9,6 @@ const Registration = () => {
       </p>
 
       <div className="bg-white shadow-lg rounded-lg p-6 max-w-4xl mx-auto mb-8">
-        <h2 className="text-2xl font-bold mb-4">Upcoming Events</h2>
-        <ul className="list-disc list-inside mb-4">
-          <li>Seminar on Global Economic Trends - Date: TBD</li>
-          <li>Workshop on Quantitative Analysis - Date: TBD</li>
-          <li>Guest Lecture on Development Economics - Date: TBD</li>
-        </ul>
 
         <h2 className="text-2xl font-bold mb-4">Registration Fees</h2>
         <ul className="list-disc list-inside mb-4">
@@ -33,7 +27,11 @@ const Registration = () => {
             <li>Research Scholar/Student: ₹3000 + 18% GST</li>
             <li>Faculty/Industry Professional/Others: ₹5000 + 18% GST</li>
           </ul>
-        </ul>
+              </ul>
+              <h2 className="text-2xl font-bold mb-4">Registration Link</h2>
+              <p className="text-gray-700 mb-4">
+                  The registration Link will be updated after December 31, 2024.
+              </p>
 
         <h2 className="text-2xl font-bold mb-4">Payment Information</h2>
         <p className="text-gray-700 mb-4">
