@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
+import React, { useEffect, useState, useRef } from 'react'; // Import useRef to reference the section
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import HeroImage from '../components/hero-bits.jpg'; // Hero image
@@ -12,7 +11,7 @@ import ConferencePhoto6 from '../components/conference-photo-6.jpg'; // Conferen
 
 const Home = () => {
     const [selectedImage, setSelectedImage] = useState(null); // For lightbox
-    const navigate = useNavigate(); // Initialize useNavigate for redirection
+    const conferenceSectionRef = useRef(null); // Create a ref for the conference section
 
     useEffect(() => {
         AOS.init({ duration: 1000 });
@@ -20,6 +19,11 @@ const Home = () => {
 
     // Function to close the lightbox
     const closeLightbox = () => setSelectedImage(null);
+
+    // Function to scroll to the conference section
+    const scrollToConferenceSection = () => {
+        conferenceSectionRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
+    };
 
     return (
         <div className="home-container text-center">
@@ -40,7 +44,7 @@ const Home = () => {
                     <button
                         className="mt-6 bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition transform hover:scale-105"
                         data-aos="fade-up" data-aos-delay="400"
-                        onClick={() => navigate('/about')} // Redirect to the About page
+                        onClick={scrollToConferenceSection} // Scroll down on click
                     >
                         Explore More
                     </button>
@@ -48,7 +52,7 @@ const Home = () => {
             </section>
 
             {/* Conference Information */}
-            <section className="py-12 px-4 sm:px-6 bg-white text-center" data-aos="fade-up">
+            <section ref={conferenceSectionRef} className="py-12 px-4 sm:px-6 bg-white text-center" data-aos="fade-up">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">6th Annual Conference on Economics and Finance (ACEF 2025)</h2>
                 <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto mb-6">
                     February 4-6, 2025 | BITS Pilani Hyderabad Campus <br />
