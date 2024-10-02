@@ -13,6 +13,7 @@ import ConferencePhoto8 from '../components/conference-photo-8.jpg';
 import ConferencePhoto9 from '../components/conference-photo-9.jpg';
 import ConferencePhoto10 from '../components/conference-photo-10.jpg';
 import ConferencePhoto11 from '../components/conference-photo-11.jpg';
+import ConferencePhoto12 from '../components/conference-photo-12.jpg';
 const Home = () => {
     const [selectedImage, setSelectedImage] = useState(null); // For lightbox
     const conferenceSectionRef = useRef(null); // Create a ref for the conference section
@@ -167,7 +168,7 @@ const Home = () => {
                 {/* Conference Photos */}
                 <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Previous Conference Highlights</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-up">
-                    {[ConferencePhoto1, ConferencePhoto2, ConferencePhoto3, ConferencePhoto4, ConferencePhoto5, ConferencePhoto6, ConferencePhoto7, ConferencePhoto8,ConferencePhoto9,ConferencePhoto10,ConferencePhoto11].map((photo, index) => (
+                    {[ConferencePhoto1, ConferencePhoto2, ConferencePhoto3, ConferencePhoto4, ConferencePhoto5, ConferencePhoto6, ConferencePhoto7, ConferencePhoto8,ConferencePhoto9,ConferencePhoto10,ConferencePhoto11,ConferencePhoto12].map((photo, index) => (
                         <img
                             key={index}
                             src={photo}
