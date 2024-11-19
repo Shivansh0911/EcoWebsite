@@ -24,6 +24,9 @@ const Submissions = () => {
                     <li>It is mandatory to mention the name of all persons who have contributed or have substantively edited the submitted work.</li>
                     <li>Authors are requested to mention all possible conflicts of interest, whether or not directly related to the subject of the paper, in the appropriate section of the manuscript.</li>
                     <li>Before submission, all authors are requested to ensure that there is no plagiarism, fabrication, duplication of data, or scientific misconduct in the submitted document.</li>
+                    <li>
+                        <strong>Selected papers will have the opportunity to be published in the South Asian Journal of Macroeconomics and Public Finance.</strong>
+                    </li>
                 </ul>
 
                 <h2 className="text-2xl font-bold mb-4">Important Dates</h2>
@@ -60,4 +63,3 @@ const Submissions = () => {
 };
 
 export default Submissions;
-
