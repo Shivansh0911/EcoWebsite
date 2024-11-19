@@ -55,7 +55,7 @@ const Submissions = () => {
                 </p>
                 <h2 className="text-2xl font-bold mb-4">Mode of Conference</h2>
                 <p className="text-lg text-gray-700 mb-8">
-                    Conference will be held in-person at the Department of Economics and Finance, BITS Pilani, Hyderabad Campus.
+                    Conference will be held in-person at the Department of Economics and Finance, BITS Pilani, Hyderabad Campus. 
                 </p>
             </div>
         </div>
@@ -63,3 +63,4 @@ const Submissions = () => {
 };
 
 export default Submissions;
+//Sumbission modified 
