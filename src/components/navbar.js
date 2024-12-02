@@ -161,29 +161,47 @@ const Navbar = () => {
                 </button>
 
                 <ul className="w-full mt-10 space-y-4 text-center">
-                    {[
-                        'Home',
-                        'About',
-                        'Leadership',
-                        'Speakers',
-                        'Submission',
-                        'Best Paper Awards',
-                        'Pre-Conference Workshop',
-                        'Registration',
-                    ].map((item, idx) => (
-                        <li
-                            key={idx}
-                            className="border-b border-blue-500 w-full text-center py-4"
-                        >
-                            <NavLink
-                                to={item.toLowerCase().replace(/ /g, '-')}
-                                className={linkStyles}
-                                onClick={handleLinkClick}
-                            >
-                                {item}
-                            </NavLink>
-                        </li>
-                    ))}
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="home" className={linkStyles} onClick={handleLinkClick}>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="about" className={linkStyles} onClick={handleLinkClick}>
+                            About
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="leadership" className={linkStyles} onClick={handleLinkClick}>
+                            Leadership
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="speakers" className={linkStyles} onClick={handleLinkClick}>
+                            Speakers
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="submission" className={linkStyles} onClick={handleLinkClick}>
+                            Submission
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="best-paper-awards" className={linkStyles} onClick={handleLinkClick}>
+                            Best Paper Awards
+                        </NavLink>
+                        <div className="text-sm text-gray-600">(Publication Opportunities)</div>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="preconference" className={linkStyles} onClick={handleLinkClick}>
+                            Pre-Conference Workshop
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="registration" className={linkStyles} onClick={handleLinkClick}>
+                            Registration
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>
