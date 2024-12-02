@@ -123,8 +123,13 @@ const Navbar = () => {
                             Registration
                         </NavLink>
                     </li>
-                </ul>
+                    <li>
+                    <NavLink to="/best-paper-awards" className={linkStyles} onClick={handleLinkClick}>
+    Best Paper Awards
+</NavLink>
 
+                    </li>
+                </ul>
             </div>
 
             {/* Mobile Menu */}
@@ -189,6 +194,11 @@ const Navbar = () => {
                             Registration
                         </NavLink>
                     </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="bestpaperawards" className={linkStyles} onClick={handleLinkClick}>
+                            Best Paper Awards
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -196,5 +206,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
