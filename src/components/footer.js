@@ -14,9 +14,9 @@ const Footer = () => {
                     <li><a href="/leadership" className="text-blue-600 hover:underline">Leadership</a></li>
                     <li><a href="/speakers" className="text-blue-600 hover:underline">Speakers</a></li>
                     <li><a href="/submission" className="text-blue-600 hover:underline">Submission</a></li>
-                    <li><a href="/preconference" className="text-blue-600 hover:underline">Pre-Conference Workshop</a></li>
                     <li><a href="/best-paper-awards" className="text-blue-600 hover:underline">Best Paper Awards</a></li>
-
+                    <li><a href="/preconference" className="text-blue-600 hover:underline">Pre-Conference Workshop</a></li>
+                    
                 </ul>
 
                 <p className="text-gray-700 mt-4">For any queries, contact us at</p>
