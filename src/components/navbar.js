@@ -36,13 +36,14 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-blue-50">
+            {/* Desktop and Tablet View */}
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-                {/* Logo Section */}
+                {/* Logo */}
                 <div id="logo" className="flex-shrink-0">
                     <img className="w-32 md:w-36" src={Logo} alt="Logo" />
                 </div>
 
-                {/* Links for larger screens */}
+                {/* Desktop Links */}
                 <ul className="hidden md:grid grid-flow-col auto-cols-max gap-4 text-sm lg:text-base xl:text-lg justify-end items-center w-full">
                     <li>
                         <NavLink to="home" className={linkStyles} onClick={handleLinkClick}>
@@ -90,7 +91,7 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                {/* Hamburger Menu for Mobile View */}
+                {/* Mobile Menu Button */}
                 <div className="md:hidden">
                     <button
                         id="menu-btn"
@@ -98,7 +99,6 @@ const Navbar = () => {
                         onClick={toggleMenu}
                     >
                         {menuOpen ? (
-                            // Cross icon when the menu is open
                             <svg
                                 className="w-8 h-8 absolute top-5 right-5"
                                 fill="none"
@@ -114,7 +114,6 @@ const Navbar = () => {
                                 ></path>
                             </svg>
                         ) : (
-                            // Hamburger icon when the menu is closed
                             <svg
                                 className="w-8 h-8"
                                 fill="none"
