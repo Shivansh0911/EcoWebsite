@@ -67,7 +67,7 @@ const Registration = () => {
 
                 <h2 className="text-2xl font-bold mb-4">Travel Reimbursement</h2>
                 <p className="text-gray-700 mb-4">
-                    There is limited provision for the reimbursement of travel expenses for select participants. For more details, kindly refer to the official conference website or contact the organizers.
+                    There is limited provision for the reimbursement of travel expenses for select participants. 
                 </p>
             </div>
         </div>
