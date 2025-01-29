@@ -14,6 +14,8 @@ import ConferencePhoto9 from '../components/conference-photo-9.jpg';
 import ConferencePhoto10 from '../components/conference-photo-10.jpg';
 import ConferencePhoto11 from '../components/conference-photo-11.jpg';
 import ConferencePhoto12 from '../components/conference-photo-12.jpg';
+import sponsor from '../components/Sponsor.png';
+
 const Home = () => {
     const [selectedImage, setSelectedImage] = useState(null); // For lightbox
     const conferenceSectionRef = useRef(null); // Create a ref for the conference section
@@ -115,50 +117,50 @@ const Home = () => {
                 <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Previous Year Conferences</h2>
                 <ul className="list-disc list-inside text-left mx-auto max-w-lg text-blue-600" data-aos="fade-up">
                     <li>
-                        <a 
-                            href="https://web.bits-pilani.ac.in/uploads/1st%20Annual%20Conference%20Poster.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="https://web.bits-pilani.ac.in/uploads/1st%20Annual%20Conference%20Poster.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="hover:underline"
                         >
                             1st Annual Conference in Economics and Finance
                         </a>
                     </li>
                     <li>
-                        <a 
-                            href="https://web.bits-pilani.ac.in/uploads/2nd%20Annual%20Conference-Poster.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="https://web.bits-pilani.ac.in/uploads/2nd%20Annual%20Conference-Poster.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="hover:underline"
                         >
                             2nd Annual Conference in Economics and Finance
                         </a>
                     </li>
                     <li>
-                        <a 
-                            href="https://web.bits-pilani.ac.in/uploads/3rd%20annual%20conference%20poster.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="https://web.bits-pilani.ac.in/uploads/3rd%20annual%20conference%20poster.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="hover:underline"
                         >
                             3rd Annual Conference in Economics and Finance
                         </a>
                     </li>
                     <li>
-                        <a 
-                            href="https://web.bits-pilani.ac.in/uploads/updated%20conf23%20poster.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="https://web.bits-pilani.ac.in/uploads/updated%20conf23%20poster.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="hover:underline"
                         >
                             4th Annual Conference in Economics and Finance
                         </a>
                     </li>
                     <li>
-                        <a 
-                            href="https://acef2024.vercel.app/" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                        <a
+                            href="https://acef2024.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="hover:underline"
                         >
                             5th Annual Conference in Economics and Finance
@@ -168,7 +170,7 @@ const Home = () => {
                 {/* Conference Photos */}
                 <h2 className="text-2xl font-bold mt-10 mb-4" data-aos="fade-up">Previous Conference Highlights</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-up">
-                    {[ConferencePhoto1, ConferencePhoto2, ConferencePhoto3, ConferencePhoto4, ConferencePhoto5, ConferencePhoto6, ConferencePhoto7, ConferencePhoto8,ConferencePhoto9,ConferencePhoto10,ConferencePhoto11,ConferencePhoto12].map((photo, index) => (
+                    {[ConferencePhoto1, ConferencePhoto2, ConferencePhoto3, ConferencePhoto4, ConferencePhoto5, ConferencePhoto6, ConferencePhoto7, ConferencePhoto8, ConferencePhoto9, ConferencePhoto10, ConferencePhoto11, ConferencePhoto12].map((photo, index) => (
                         <img
                             key={index}
                             src={photo}
@@ -179,6 +181,7 @@ const Home = () => {
                     ))}
                 </div>
             </section>
+
 
             {/* Lightbox Modal */}
             {selectedImage && (
@@ -192,7 +195,20 @@ const Home = () => {
                     </button>
                 </div>
             )}
+            <h2 className="text-2xl font-bold text-center mt-12 mb-6" data-aos="fade-up">Sponsored By</h2>
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center" data-aos="fade-up">
+                <a href=" https://www.linkedin.com/company/icssr-official/?originalSubdomain=in ">
+                    <img
+                        src={sponsor}
+                        alt="Sponsor 1"
+                        className="w-full max-w-lg mx-auto rounded-lg cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                    />
+                </a>
+            </div>
+           
+
         </div>
+
     );
 };
 
