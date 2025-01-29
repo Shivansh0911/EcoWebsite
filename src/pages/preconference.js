@@ -21,9 +21,15 @@ const Preconference = () => {
                         <p>This session will explore the applications of Artificial Intelligence and Machine Learning in economics and finance.</p>
                         <p className="font-semibold">Resource Persons:</p>
                         <ul className="list-disc list-inside">
-                            <li><a href="#" className="text-blue-600 underline">Prof. ACV Subramaniam</a></li>
-                            <li><a href="#" className="text-blue-600 underline">Prof. SK Aziz Ali</a></li>
-                            <li><a href="#" className="text-blue-600 underline">Prof. Thota Nagaraju</a></li>
+                            <li><a href="https://www.bits-pilani.ac.in/hyderabad/subrahmanyam-acv" className="text-blue-600 underline">Prof. ACV Subramaniam</a></li>
+                            <li><a href="https://www.bits-pilani.ac.in/hyderabad/dr-sk-aziz-ali/" className="text-blue-600 underline">Prof. SK Aziz Ali</a></li>
+                            <li><a href="https://www.bits-pilani.ac.in/hyderabad/dr-thota-nagaraju" className="text-blue-600 underline">Prof. Thota Nagaraju</a></li>
+                        </ul>
+                        <p className="font-semibold">Topics Covered:</p>
+                        <ul className="list-disc list-inside">
+                            <li>Overview of the latest developments in AI & ML; Data pre-processing, Exploratory Data Analysis, and Model Testing</li>
+                            <li>Hands-on implementation of AI-ML algorithms</li>
+                            <li>Data visualization and the Grammar of Graphics: Hands-on</li>
                         </ul>
                         <p className="font-semibold">Software Used: Python</p>
                     </li>
@@ -34,8 +40,15 @@ const Preconference = () => {
                         <p>Participants will gain insights into the fundamental properties of time series data and explore various modeling techniques.</p>
                         <p className="font-semibold">Resource Persons:</p>
                         <ul className="list-disc list-inside">
-                            <li><a href="#" className="text-blue-600 underline">Prof. Sunny Kumar Singh</a></li>
-                            <li><a href="#" className="text-blue-600 underline">Prof. Nivedita Sinha</a></li>
+                            <li><a href="https://www.bits-pilani.ac.in/hyderabad/sunny-kumar-singh" className="text-blue-600 underline">Prof. Sunny Kumar Singh</a></li>
+                            <li><a href="https://www.bits-pilani.ac.in/hyderabad/nivedita-sinha" className="text-blue-600 underline">Prof. Nivedita Sinha</a></li>
+                        </ul>
+                        <p className="font-semibold">Topics Covered:</p>
+                        <ul className="list-disc list-inside">
+                            <li>Time Series data and their characteristics (Trend, Cycle, Seasonality, and Error)</li>
+                            <li>Properties of time series data (Stationarity, Unit Root Tests)</li>
+                            <li>Univariate Time Series Models: AR, MA, ARMA, ARIMA, Volatility Modeling (ARCH, GARCH)</li>
+                            <li>Multivariate Time Series Models: Vector Autoregression (VAR), Co-integration and Error Correction Model</li>
                         </ul>
                         <p className="font-semibold">Software Used: Python</p>
                     </li>
@@ -46,7 +59,15 @@ const Preconference = () => {
                         <p>This session will introduce practical techniques for identifying causal relationships in observational data.</p>
                         <p className="font-semibold">Resource Person:</p>
                         <ul className="list-disc list-inside">
-                            <li><a href="#" className="text-blue-600 underline">Prof. Rishi Kumar</a></li>
+                            <li><a href="https://www.bits-pilani.ac.in/hyderabad/rishi-kumar" className="text-blue-600 underline">Prof. Rishi Kumar</a></li>
+                        </ul>
+                        <p className="font-semibold">Topics Covered:</p>
+                        <ul className="list-disc list-inside">
+                            <li>Introduction to Causal Inference</li>
+                            <li>Key Assumptions in Causal Inference</li>
+                            <li>Matching Techniques for Causal Estimation</li>
+                            <li>Propensity Score Matching (PSM)</li>
+                            <li>Application of PSM in Policy Evaluation</li>
                         </ul>
                         <p className="font-semibold">Software Used: STATA</p>
                     </li>
