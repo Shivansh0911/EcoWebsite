@@ -21,16 +21,9 @@ const Preconference = () => {
                         <p>This session will explore the applications of Artificial Intelligence and Machine Learning in economics and finance.</p>
                         <p className="font-semibold">Resource Persons:</p>
                         <ul className="list-disc list-inside">
-                            <li>Prof. ACV Subramaniam</li>
-                            <li>Prof. SK Aziz Ali</li>
-                            <li>Prof. Thota Nagaraju</li>
-                        </ul>
-                        <p className="font-semibold">Topics Covered:</p>
-                        <ul className="list-disc list-inside">
-                            <li>Latest developments in AI & ML</li>
-                            <li>Data pre-processing, Exploratory Data Analysis, and Model Testing</li>
-                            <li>Hands-on implementation of AI-ML algorithms</li>
-                            <li>Data visualization and the Grammar of Graphics</li>
+                            <li><a href="#" className="text-blue-600 underline">Prof. ACV Subramaniam</a></li>
+                            <li><a href="#" className="text-blue-600 underline">Prof. SK Aziz Ali</a></li>
+                            <li><a href="#" className="text-blue-600 underline">Prof. Thota Nagaraju</a></li>
                         </ul>
                         <p className="font-semibold">Software Used: Python</p>
                     </li>
@@ -38,19 +31,11 @@ const Preconference = () => {
                     <li className="mb-6"> 
                         <strong>Time Series Econometrics: Practical Applications in Macroeconomics and Finance</strong> <br/>
                         <span className="font-semibold">Time: 2:00 PM – 5:30 PM</span>
-                        <p>This session will focus on Time Series Econometrics with practical applications in macroeconomics and finance.</p>
+                        <p>Participants will gain insights into the fundamental properties of time series data and explore various modeling techniques.</p>
                         <p className="font-semibold">Resource Persons:</p>
                         <ul className="list-disc list-inside">
-                            <li>Prof. Sunny Kumar Singh</li>
-                            <li>Prof. Nivedita Sinha</li>
-                        </ul>
-                        <p className="font-semibold">Topics Covered:</p>
-                        <ul className="list-disc list-inside">
-                            <li>Time Series data characteristics (Trend, Cycle, Seasonality, Error)</li>
-                            <li>Stationarity, Unit Root Tests</li>
-                            <li>Univariate Models (AR, MA, ARMA, ARIMA)</li>
-                            <li>Volatility Modeling (ARCH, GARCH)</li>
-                            <li>Multivariate Models (VAR, Co-integration, Error Correction Model)</li>
+                            <li><a href="#" className="text-blue-600 underline">Prof. Sunny Kumar Singh</a></li>
+                            <li><a href="#" className="text-blue-600 underline">Prof. Nivedita Sinha</a></li>
                         </ul>
                         <p className="font-semibold">Software Used: Python</p>
                     </li>
@@ -61,25 +46,11 @@ const Preconference = () => {
                         <p>This session will introduce practical techniques for identifying causal relationships in observational data.</p>
                         <p className="font-semibold">Resource Person:</p>
                         <ul className="list-disc list-inside">
-                            <li>Prof. Rishi Kumar</li>
-                        </ul>
-                        <p className="font-semibold">Topics Covered:</p>
-                        <ul className="list-disc list-inside">
-                            <li>Introduction to Causal Inference</li>
-                            <li>Key Assumptions in Causal Inference</li>
-                            <li>Matching Techniques for Causal Estimation</li>
-                            <li>Propensity Score Matching (PSM)</li>
-                            <li>Application of PSM in Policy Evaluation</li>
+                            <li><a href="#" className="text-blue-600 underline">Prof. Rishi Kumar</a></li>
                         </ul>
                         <p className="font-semibold">Software Used: STATA</p>
                     </li>
                 </ol>
-
-                <p className="text-gray-700 mb-4">
-                    <strong>Please Note:</strong> Participants are required to bring their laptops. 
-                    <br/>
-                    <strong>Schedule:</strong> AI/ML in Economics and Finance (Morning), Parallel Sessions in the Afternoon.
-                </p>
 
                 <h2 className="text-2xl font-bold mb-4">Registration Fees (Only for Pre-Conference Workshop)</h2>
                 <p className="text-gray-700 mb-4">
