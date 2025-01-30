@@ -6,7 +6,23 @@ const Preconference = () => {
             <h1 className="text-5xl font-bold text-center mb-8">Pre-Conference Workshop</h1>
             <h2 className="text-2xl font-semibold text-center mb-4">Date: February 4, 2025</h2>
             <h3 className="text-xl text-center mb-8">Venue: BITS Pilani, Hyderabad Campus</h3>
-            
+
+            <div className="bg-yellow-100 p-4 rounded-lg max-w-3xl mx-auto text-center mb-8">
+                <p className="text-lg font-semibold">📢 Please Note:</p>
+                <ul className="list-disc list-inside text-gray-700">
+                    <li>All participants are required to bring their laptops.</li>
+                    <li><strong>Session Schedule:</strong></li>
+                    <ul className="list-disc list-inside ml-4">
+                        <li><strong>Pre-Lunch Session:</strong> AI/ML in Economics and Finance</li>
+                        <li><strong>Post-Lunch Parallel Sessions:</strong></li>
+                        <ul className="list-disc list-inside ml-6">
+                            <li>Time Series Econometrics: Practical Applications in Macroeconomics and Finance</li>
+                            <li>Causal Inference Techniques: Propensity Score Matching and Applications</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+
             <p className="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-8">
                 Join us for pre-conference workshops designed to deepen your understanding of key economic concepts and methodologies. 
                 The workshops will feature three sessions covering advanced topics in Economics and Finance, offering valuable insights and practical skills.
