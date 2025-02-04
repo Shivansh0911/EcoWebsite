@@ -14,6 +14,7 @@ import Registration from "./pages/Registration";
 import BestPaperAwards from "./pages/BestPaperAwards"; // Import new page
 import Watermark from "./components/Watermark";
 import Footer from "./components/footer";
+import ConferenceScheduleCarousel from "./pages/con-shcedule";
 
 function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
             <Route path="/submission" element={<Submission />} />
             <Route path="/best-paper-awards" element={<BestPaperAwards />} />
             <Route path="/registration" element={<Registration />} />
+            <Route path="conference-schedule" element={<ConferenceScheduleCarousel />} />
           </Routes>
         </div>
         <Footer />

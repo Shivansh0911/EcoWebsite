@@ -36,14 +36,11 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-blue-50">
-            {/* Desktop and Tablet View */}
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-                {/* Logo */}
                 <div id="logo" className="flex-shrink-0">
                     <img className="w-32 md:w-36" src={Logo} alt="Logo" />
                 </div>
 
-                {/* Desktop Links */}
                 <ul className="hidden md:grid grid-flow-col auto-cols-max gap-4 text-sm lg:text-base xl:text-lg justify-end items-center w-full">
                     <li>
                         <NavLink to="home" className={linkStyles} onClick={handleLinkClick}>
@@ -70,6 +67,11 @@ const Navbar = () => {
                             Submission
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink to="conference-schedule" className={linkStyles} onClick={handleLinkClick}>
+                            Conference Schedule
+                        </NavLink>
+                    </li>
                     <li className="whitespace-nowrap">
                         <NavLink to="best-paper-awards" className={linkStyles} onClick={handleLinkClick}>
                             Best Paper Awards
@@ -91,7 +93,6 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                {/* Mobile Menu Button */}
                 <div className="md:hidden">
                     <button
                         id="menu-btn"
@@ -133,7 +134,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
             <div
                 id="mobile-menu"
                 className={`md:hidden fixed inset-0 bg-white text-skyblue text-xl z-50 flex flex-col items-center justify-start pt-10 transition-transform duration-500 ease-in-out ${
@@ -184,6 +184,11 @@ const Navbar = () => {
                     <li className="border-b border-blue-500 w-full text-center py-4">
                         <NavLink to="submission" className={linkStyles} onClick={handleLinkClick}>
                             Submission
+                        </NavLink>
+                    </li>
+                    <li className="border-b border-blue-500 w-full text-center py-4">
+                        <NavLink to="conference-schedule" className={linkStyles} onClick={handleLinkClick}>
+                            Conference Schedule
                         </NavLink>
                     </li>
                     <li className="border-b border-blue-500 w-full text-center py-4">
