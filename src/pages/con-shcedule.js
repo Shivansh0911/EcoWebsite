@@ -9,6 +9,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import day1Img from "../components/day1.png"; // Replace with actual paths
 import day2Img from "../components/day2.png";
 import day3Img from "../components/day3.png";
+import day4Img from "../components/day4.png";
+import day5Img from "../components/day5.png";
 
 const ConferenceScheduleCarousel = () => {
   return (
@@ -31,6 +33,12 @@ const ConferenceScheduleCarousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={day3Img} alt="Day 3 Schedule" className="w-full rounded-lg shadow-lg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={day4Img} alt="Day 3 Schedule" className="w-full rounded-lg shadow-lg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={day5Img} alt="Day 3 Schedule" className="w-full rounded-lg shadow-lg" />
         </SwiperSlide>
       </Swiper>
     </div>
